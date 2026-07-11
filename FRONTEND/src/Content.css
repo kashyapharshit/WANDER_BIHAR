@@ -1,0 +1,319 @@
+/* Content.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Cinzel:wght@700;900&family=IM+Fell+English+SC&display=swap');
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 100px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Typography & Layout */
+.hero-tagline {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling the Sanskrit Devanagari text */
+.sanskrit-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f1f108;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Styling the English subtitle */
+.english-translation {
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.wander {
+    font-family: 'Playfair Display', serif;
+    font-size: 180px;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+.bihar {
+    font-family: 'Cinzel', serif;
+    font-size: 220px;
+    font-weight: 900;
+    color: #f5c97a;
+    line-height: 0.9;
+    letter-spacing: 25px;
+    text-shadow:
+        3px 3px 0px #3d1f08,
+        6px 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.tagline {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 50px;
+    color: #e8d5b0;
+    letter-spacing: 6px;
+    margin-top: 16px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.scroll-prompt {
+    position: absolute;
+    bottom: 0px;
+    /* Distance from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    /* Slightly transparent white */
+    z-index: 3;
+    /* Keeps it above the video and overlay */
+    pointer-events: none;
+    /* Prevents it from interfering with user clicks */
+}
+
+.scroll-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    /* Changes or inherits your clean typography */
+}
+
+.scroll-arrow {
+    font-size: 50px;
+    line-height: 1;
+    animation: bounce 2s infinite;
+    margin-bottom: 50px;
+    /* Smooth bouncing effect */
+}
+
+/* Smooth Bouncing Animation */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-8px);
+    }
+
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
+/* ===================== */
+/* Responsive Breakpoints */
+/* ===================== */
+
+/* Large desktops / laptops */
+@media (max-width: 1440px) {
+    .wander {
+        font-size: 140px;
+    }
+
+    .bihar {
+        font-size: 170px;
+        letter-spacing: 18px;
+    }
+
+    .tagline {
+        font-size: 42px;
+    }
+}
+
+/* Tablets landscape / small laptops */
+@media (max-width: 1024px) {
+    .wander {
+        font-size: 100px;
+    }
+
+    .bihar {
+        font-size: 120px;
+        letter-spacing: 14px;
+    }
+
+    .tagline {
+        font-size: 34px;
+        letter-spacing: 4px;
+    }
+
+    .sanskrit-text {
+        font-size: 2.5rem;
+    }
+
+    .english-translation {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* Tablets portrait */
+@media (max-width: 768px) {
+    .hero-text {
+        margin-bottom: 60px;
+    }
+
+    .wander {
+        font-size: 70px;
+        letter-spacing: -1px;
+    }
+
+    .bihar {
+        font-size: 80px;
+        letter-spacing: 10px;
+        text-shadow:
+            2px 2px 0px #3d1f08,
+            4px 4px 14px rgba(0, 0, 0, 0.6);
+    }
+
+    .tagline {
+        font-size: 26px;
+        letter-spacing: 3px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .sanskrit-text {
+        font-size: 2rem;
+    }
+
+    .english-translation {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-tagline {
+        padding: 24px 16px;
+    }
+
+    .scroll-arrow {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile landscape */
+@media (max-width: 480px) {
+    .hero-text {
+        margin-bottom: 40px;
+    }
+
+    .wander {
+        font-size: 42px;
+        letter-spacing: 0px;
+    }
+
+    .bihar {
+        font-size: 48px;
+        letter-spacing: 6px;
+        text-shadow:
+            1px 1px 0px #3d1f08,
+            3px 3px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .tagline {
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    .sanskrit-text {
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+    }
+
+    .english-translation {
+        font-size: 0.85rem;
+        letter-spacing: 1.5px;
+    }
+
+    .hero-tagline {
+        padding: 16px 12px;
+    }
+
+    .scroll-text {
+        font-size: 0.7rem;
+    }
+
+    .scroll-arrow {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .wander {
+        font-size: 32px;
+    }
+
+    .bihar {
+        font-size: 36px;
+        letter-spacing: 4px;
+    }
+
+    .tagline {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+    }
+
+    .sanskrit-text {
+        font-size: 1.25rem;
+    }
+
+    .english-translation {
+        font-size: 0.75rem;
+    }
+}

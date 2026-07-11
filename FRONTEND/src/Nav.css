@@ -1,0 +1,153 @@
+#logo {
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+}
+
+#navbar {
+    background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 50%, #1a0f08 100%) !important;
+    padding: 0 1.5rem;
+    align-items: center;
+    min-height: 90px;
+}
+
+.button {
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+#prem {
+    background-color: transparent;
+    border: 1.5px solid #ffd700;
+    color: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+#prem:hover {
+    background: linear-gradient(90deg, #ffd700, #ffea00);
+    color: #111;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px #ffd70088, 0 4px 20px #ffd70055;
+}
+
+/* --- THE WRAPPER (Pill Shape) --- */
+#search-wrap {
+    display: flex;
+    align-items: stretch;
+    /* Makes all children the same height */
+    width: 400px;
+    max-width: 40vw;
+    height: 42px;
+    border-radius: 50px;
+    overflow: hidden;
+    /* Clips the corners perfectly */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
+}
+
+/* --- LEFT PART: White Background --- */
+#search-icon {
+    background-color: white;
+    color: #4a2c1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px 0 20px;
+}
+
+/* --- MIDDLE PART: Translucent Input --- */
+#search1 {
+    flex-grow: 1;
+    /* Forces input to stretch and take up remaining space */
+    min-width: 0;
+    /* Prevents flexbox from breaking out of the container */
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    outline: none;
+    /* Removes the default browser focus ring */
+    padding: 0 15px;
+}
+
+#search1::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- RIGHT PART: Brown Button --- */
+#search-btn {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#search-btn:hover {
+    background-color: #a6734c;
+}
+
+#love {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: rgba(220, 38, 38, 0.2);
+    border: 1.5px solid rgba(220, 38, 38, 0.5);
+    color: #ef4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    margin: 0;
+}
+
+#love:hover {
+    background-color: #dc2626;
+    color: white;
+    border-color: #dc2626;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#user {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: rgba(96, 165, 250, 0.2);
+    border: 1.5px solid rgba(96, 165, 250, 0.4);
+    color: #93c5fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    margin: 0;
+}
+
+#user:hover {
+    background-color: cadetblue;
+    color: white;
+    border-color: cadetblue;
+    transform: scale(1.1);
+}

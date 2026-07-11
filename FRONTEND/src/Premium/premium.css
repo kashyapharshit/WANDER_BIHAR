@@ -1,0 +1,132 @@
+/* Full screen layout */
+.premium-hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background video styling */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    /* transform: translateX(-50%) translateY(-50%); */
+    z-index: -2;
+    object-fit: cover;
+}
+
+/* Gradient overlay for better text contrast */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+}
+
+/* Main Content Wrapper */
+.premium-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Typography Enhancements */
+.hero-title {
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    /* Makes text pop against bright videos */
+}
+
+.hero-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+    color: #f8f9fa;
+}
+
+.section-title {
+    font-weight: 600;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+/* Premium Button Styling */
+.premium-btn {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    border: none;
+    color: #000 !important;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    /* Pill shape looks more modern */
+}
+
+.premium-btn:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.6);
+    background: linear-gradient(135deg, #ffca2c, #ffa726);
+}
+
+/* High-End Glassmorphism Cards */
+.glass-card {
+    background: rgba(20, 20, 20, 0.55);
+    /* Darker base to contrast the white text */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    /* Subtle glowing edge */
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    /* Forces all text inside to be white */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 193, 7, 0.5);
+    /* Subtle yellow border on hover */
+}
+
+.glass-card h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+    /* Override any Bootstrap defaults */
+}
+
+.glass-card p {
+    color: #e0e0e0;
+    /* Slightly off-white for visual hierarchy */
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.glass-card ul li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#premVideo {
+    width: 400px;
+    height: auto;
+}
