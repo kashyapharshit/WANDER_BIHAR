@@ -121,14 +121,14 @@ WANDER_BIHAR/
     │   └── main.jsx
     └── package.json
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 Prerequisites: Node.js (v18+) and MongoDB.
 1. Clone the repository
 Bash
 git clone [https://github.com/kashyapharshit/WANDER_BIHAR.git](https://github.com/kashyapharshit/WANDER_BIHAR.git)
 cd WANDER_BIHAR
 
-2. Backend Setup
+## 2. Backend Setup
 Bash
 cd BACKEND
 npm install
@@ -139,7 +139,7 @@ JWT_SECRET=your_secret_key_here
 MONGO_URI=mongodb://localhost:27017/Bihar
 Start the backend server: node index.js
 
-3. Frontend Setup
+## 3. Frontend Setup
 Open a new terminal window:
 Bash
 cd FRONTEND
@@ -149,7 +149,7 @@ npm run dev
 Open your browser to http://localhost:5173. Register a new user, or set a user's role to "admin" in MongoDB to access /admin.
 
 
-🎓 Acknowledgements & Team
+## 🎓 Acknowledgements & Team
 This web application was successfully developed through collaborative teamwork, with members developing assigned modules, resolving integration issues, and contributing to the overall architecture. Sincere thanks to our C-DAC mentors Ms. Neha Giri and Mr. Aniket for their foundational guidance.
 The Development Team (C-DAC Patna Interns):
 Harshit Kashyap — Team Leader
