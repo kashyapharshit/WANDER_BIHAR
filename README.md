@@ -33,7 +33,7 @@ Built as an industrial internship project during a **Short-Term Training in Full
 | **Program** | Advanced Computing Training School (ACTS) — Short-Term Training |
 | **Course** | Full Stack Development using MERN Stack (Batch 1) |
 | **Duration** | 8th June 2026 – 10th July 2026 (5 Weeks) |
-| **Result** |Grade **A+** |
+| **Result** | Grade **A+** |
 | **Certificate No.** | C-DAC/PAT/2606/16011 |
 | **PRN** | 2606807016011 |
 
@@ -88,6 +88,7 @@ The four foundational operations powering every user interaction in Wander Bihar
 ## 🔭 Future Scope & Scalability
 
 Our pipeline includes proposed additions designed for scalable growth:
+* **Immersive Environmental Visualizations:** Evolve the planned 360° site tours into high-fidelity environmental visualizations focusing exclusively on the locations, keeping the frame clear of human subjects to emphasize the pure majesty of the heritage sites. Utilizing slow, cinematic transitions between interactive viewpoints will provide a highly engaging, documentary-style experience.
 * **AI-Powered Travel Companion:** A responsive AI delivering immediate contextual histories, answering regional queries, and mapping out automated itineraries.
 * **Augmented Reality (AR) Heritage Reconstruction:** Enabling tourists to use smartphone cameras on-site to view 3D digital overlays showing what ancient monuments looked like in their prime.
 * **Integrated E-Ticketing & Crowd Management:** Integrating third-party APIs for direct monument ticket booking, paired with real-time crowd analytics to optimize visits.
@@ -120,42 +121,62 @@ WANDER_BIHAR/
     │   ├── WishlistContext.jsx # Global wishlist state (Context API)
     │   └── main.jsx
     └── package.json
+```
+
+---
 
 ## ⚙️ Installation & Setup
-Prerequisites: Node.js (v18+) and MongoDB.
-1. Clone the repository
-Bash
+
+**Prerequisites:** Node.js (v18+) and MongoDB.
+
+**1. Clone the repository**
+```bash
 git clone [https://github.com/kashyapharshit/WANDER_BIHAR.git](https://github.com/kashyapharshit/WANDER_BIHAR.git)
 cd WANDER_BIHAR
+```
 
-## 2. Backend Setup
-Bash
+**2. Backend Setup**
+```bash
 cd BACKEND
 npm install
-Create a .env file inside the BACKEND folder:
-Plaintext
+```
+Create a `.env` file inside the `BACKEND` folder:
+```text
 PORT=3000
 JWT_SECRET=your_secret_key_here
 MONGO_URI=mongodb://localhost:27017/Bihar
-Start the backend server: node index.js
+```
+Start the backend server: 
+```bash
+node index.js
+```
 
-## 3. Frontend Setup
+**3. Frontend Setup**
 Open a new terminal window:
-Bash
+```bash
 cd FRONTEND
 npm install
 npm run dev
-4. Access the application
-Open your browser to http://localhost:5173. Register a new user, or set a user's role to "admin" in MongoDB to access /admin.
+```
 
+**4. Access the application**
+Open your browser to `http://localhost:5173`. Register a new user, or set a user's role to `"admin"` in MongoDB to access `/admin`.
+
+---
 
 ## 🎓 Acknowledgements & Team
+
 This web application was successfully developed through collaborative teamwork, with members developing assigned modules, resolving integration issues, and contributing to the overall architecture. Sincere thanks to our C-DAC mentors Ms. Neha Giri and Mr. Aniket for their foundational guidance.
-The Development Team (C-DAC Patna Interns):
-Harshit Kashyap — Team Leader
-Shiksha — Developer
-Pallavi — Developer
-Rashmi — Developer
-Anjali — Developer
-📄 License
+
+**The Development Team (C-DAC Patna Interns):**
+* **Harshit Kashyap** — Team Leader
+* **Shiksha** — Developer
+* **Pallavi** — Developer
+* **Rashmi** — Developer
+* **Anjali** — Developer
+
+---
+
+## 📄 License
+
 This project was built for educational purposes as part of an industrial training program. Feel free to explore the code for learning purposes.
