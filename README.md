@@ -74,6 +74,7 @@ The four foundational operations powering every user interaction in Wander Bihar
 
 ### 👤 User Features
 * User registration and secure login gateway.
+  ![Signup Page](/SignUp.png)
 * Browse tourist destinations grouped by division (e.g., Bhagalpur, Patna, Magadh).
 * Curate custom itineraries using the Wishlist feature, backed by `WishlistContext` and `LocalStorage`.
 * Immersive 360° virtual site tours allowing users to experience iconic heritage landscapes virtually.
@@ -83,6 +84,7 @@ The four foundational operations powering every user interaction in Wander Bihar
 * **User Management & Oversight:** Monitor registered profiles, track active sessions, and maintain platform security.
 * **Dynamic Location Management:** Effortless CRUD operations on tourism listings—adding new places, modifying details, or removing destinations.
 * **Premium Status Control:** Modify access permissions and authorize user upgrade requests for immersive features.
+![Admin Page](/Admin.png)
 
 ---
 
