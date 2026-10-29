@@ -174,7 +174,6 @@ This web application was successfully developed through collaborative teamwork, 
 **The Development Team (C-DAC Patna Interns):**
 * **Harshit Kashyap** — Team Leader
 * **Shiksha** — Developer
-* **Pallavi** — Developer
 * **Rashmi** — Developer
 * **Anjali** — Developer
 
